@@ -33,8 +33,8 @@ WiFiServer EKARD_server(EKARD_Port);
 IPAddress EKARD_ip(192, 168, 178, 201);
 IPAddress EKARD_gateway(192, 168, 0, 1);
 IPAddress EKARD_subnet(255, 255, 0, 0);
-const char* ssid = "FRITZ!Box WGLAN";
-const char* password = "1chMoecht31nt3rn3t<3";
+const char* ssid = "mySSID";
+const char* password = "myPASSWORD";
 #endif
 
 
