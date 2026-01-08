@@ -2,12 +2,12 @@
 
 ## Client-User-Interface
 
-![Main Menu](Doc_Images\image-6.png)
+![Main Menu](Doc_Images/image-6.png)
 ### New Axis Position:
 - lässt einen die aktuellen Achsenpositionen des EKARD einzeln beeinflussen
-![Axis SubMenu](Doc_Images\image-7.png)
+![Axis SubMenu](Doc_Images/image-7.png)
 - wird eine Achse angewählt, kann im Untermenü der Achsenwinkel beliebig oft verändert werden. Um das Untermenü wieder zu verlassen, muss ein Zahlenwert außerhalb des erlaubten Inputs eingegeben werden. Die mögliche Input-Spanne wird dabei angegeben.
-![Axis SubSubMenu](Doc_Images\image-8.png)
+![Axis SubSubMenu](Doc_Images/image-8.png)
 - um die eingegeben Achsenwerte an den Server zu übermitteln und somit den EKARD in die vorgegebene Position zu bringen, ist Punkt 8 anzuwählen
 - um das Untermenü zu verlassen, ohne die Positionswerte an den EKARD zu übermitteln, ist Punkt 7 anzuwählen
 
@@ -50,15 +50,15 @@
 
 ### Save value on Harddrive:
 - ermöglicht es, aktuell im EKARD-Server eingestellte Werte auf dem EEPROM des ESP32 abzuspeichern 
-![EKARD SubMenu](Doc_Images\image-9.png)
+![EKARD SubMenu](Doc_Images/image-9.png)
 - im Untermenü kann ausgewählt werden, welche Werte genau auf dem persistenten Speicher des ESP32 abgelegt werden sollen
 
 
 ## Hinzufügen/Anpassen von Menüpunkten in der *get_User_Input-Methode*
 Um bereits bestehende Menüpunkte anzupassen, muss lediglich der angezeigte Menütext des jeweiligen Unterpunktes geändert werden (Bsp. Main Menu):
-![Main Menu Menütext](Doc_Images\image-4.png)
+![Main Menu Menütext](Doc_Images/image-4.png)
 Falls erforderlich, muss die mit diesem Menüpunkt assozierte Tastatureingabe dann noch mit einem anderen MenuStatus-Befehl verknüpft werden, um eine korrekte Verarbeitung zu gewährleisten:
-![Main Menu MenuStatus Verknüpfung](Doc_Images\image-5.png)
+![Main Menu MenuStatus Verknüpfung](Doc_Images/image-5.png)
 In der gleichen Art und Weise können auch neue Menüpunkte eingefügt werden.
 
 Um neue Funktionalitäten zum Menü hinzuzufügen, können weitere Attribute zur enum-Struktur *Interface* hinzugefügt werden. 
